@@ -15,7 +15,8 @@ public class Heros implements Personnage {
 
     @Override
     public void subirDegats(int pointsDegats) {
-        this.pv = this.pv-pointsDegats*100/this.defense;
+        int degatsSubis = pointsDegats * (100 - this.def) / 100; // Défense en pourcentage
+        this.pv = Math.max(this.pv - degatsSubis, 0); // Réduction des PV, minimum 0
     }
 
     //Implementation des methodes de Personnage.
@@ -34,8 +35,8 @@ public class Heros implements Personnage {
     }
 
     @Override
-    public void setPv() {
-
+    public void setPv(int pv) {
+        this.pv = pv; // Met à jour les points de vie
     }
     public void heal() {
         if (this.pv+30>100) {

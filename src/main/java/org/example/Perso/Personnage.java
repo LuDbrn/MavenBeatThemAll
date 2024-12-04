@@ -17,7 +17,7 @@ public interface Personnage
 
     //Getter et Setter pour PV
     int getPv();
-    void setPv();
+    void setPv(int i);
 
     //Getters pour Def et Attk
     int getAttk();

@@ -14,7 +14,8 @@ public class Ennemi implements Personnage {
 
     @Override
     public void subirDegats(int pointsDegats) {
-        this.pv = this.pv-pointsDegats*100/this.def;
+        int degatsSubis = pointsDegats * (100 - this.def) / 100; // Défense en pourcentage
+        this.pv = Math.max(this.pv - degatsSubis, 0); // Réduction des PV, minimum 0
     }
 
     public void attaquer(Personnage cible) {
@@ -32,8 +33,8 @@ public class Ennemi implements Personnage {
     }
 
     @Override
-    public void setPv() {
-        this.pv = Math.max(pv, 0); // Les PV ne peuvent pas être négatifs
+    public void setPv(int pv) {
+        this.pv = pv; // Met à jour les points de vie
     }
 
     @Override
@@ -45,7 +46,6 @@ public class Ennemi implements Personnage {
     public int getDef() {
         return def;
     }
-
 
     public static class Brigand extends Ennemi {
         public Brigand() {

@@ -10,7 +10,7 @@ class EnnemiTest {
     void subirDegats() {
         Ennemi ennemi = new Ennemi.Brigand();
         ennemi.subirDegats(20);
-        assertEquals(30, ennemi.getPv());  // Brigand has 50 initial PV
+        assertEquals(30, ennemi.getPv());
     }
 
     @Test
@@ -43,6 +43,6 @@ class EnnemiTest {
     @Test
     void getDef() {
         Ennemi ennemi = new Ennemi.Brigand();
-        assertEquals(0, ennemi.getDef());
+        assertEquals(50, ennemi.getDef());  // Défense de Brigand est 10
     }
 }

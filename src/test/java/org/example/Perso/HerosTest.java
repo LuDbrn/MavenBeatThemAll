@@ -33,7 +33,7 @@ class HerosTest {
         Heros heros = new Heros(100, 20, 10);
         Ennemi ennemi = new Ennemi.Brigand();
         heros.attaquer(ennemi);
-        assertEquals(30, ennemi.getPv());  // Assuming hero's attack reduces brigand PV to 30
+        assertEquals(30, ennemi.getPv());
     }
 
     @Test

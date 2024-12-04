@@ -60,7 +60,7 @@ public class Main {
             System.out.println("1. Avancer");
             System.out.println("2. Reculer");
             System.out.println("3. Utiliser Boost");
-            System.out.println("4. Utiliser Potion");
+            System.out.println("4. Utiliser les potions de soin (+30PV)");
             System.out.println("5. Leave la Game");
 
             int action = scanner.nextInt();
