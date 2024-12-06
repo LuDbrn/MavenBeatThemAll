@@ -75,7 +75,7 @@ class CarteTest {
 
     @Test
     void testToString() {
-        Carte carte = new Carte("Forêt", 100, 0);
-        assertEquals("Forêt", carte.toString());
+        Carte carte = new Carte("L'IMT", "Cours d'électronique", 0, 250, 250);
+        assertEquals("| Nom = L'IMT -  Type = Cours d'électronique -  Longueur = 250", carte.toString());
     }
 }

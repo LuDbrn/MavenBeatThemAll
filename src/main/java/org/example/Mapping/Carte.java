@@ -14,7 +14,13 @@ public class Carte {
         this.longueur = longueur;
     }
 
-    public Carte(String forêt, int i, int debut) {
+    public Carte(String lieu, int debut, int longueur) {
+        this.lieu = lieu;
+        this.debut = debut;
+        this.longueur = longueur;
+        // Initialize other fields if necessary, or set default values
+        // Default value for lieu
+        this.fin = 0;   // Default value for fin
     }
 
     public String getNom() {
@@ -58,8 +64,6 @@ public class Carte {
     }
     @Override
     public String toString() {
-        return  "|  Nom = " + nom +" - " +
-                " Type = " + lieu +" - " +
-                " Longueur = " + longueur;
+        return  "| Nom = " + nom +" - "+" Type = " + lieu + " - " +" Longueur = " + longueur;
     }
 }
