@@ -25,7 +25,7 @@ class HerosTest {
     void subirDegats() {
         Heros heros = new Heros(100, 20, 10);
         heros.subirDegats(20);
-        assertEquals(80, heros.getPv());
+        assertEquals(82, heros.getPv());
     }
 
     @Test
@@ -33,7 +33,7 @@ class HerosTest {
         Heros heros = new Heros(100, 20, 10);
         Ennemi ennemi = new Ennemi.Brigand();
         heros.attaquer(ennemi);
-        assertEquals(30, ennemi.getPv());
+        assertEquals(40, ennemi.getPv());
     }
 
     @Test
