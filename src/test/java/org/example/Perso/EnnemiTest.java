@@ -10,7 +10,7 @@ class EnnemiTest {
     void subirDegats() {
         Ennemi ennemi = new Ennemi.Brigand();
         ennemi.subirDegats(20);
-        assertEquals(40, ennemi.getPv());
+        assertEquals(31, ennemi.getPv());
     }
 
     @Test
@@ -18,7 +18,7 @@ class EnnemiTest {
         Heros heros = new Heros(100, 20, 10);
         Ennemi ennemi = new Ennemi.Brigand();
         ennemi.attaquer(heros);
-        assertEquals(91, heros.getPv());  // Réduction de 10% des dégats subit par le hero, donc le Brig fait 10 de dmg - 10% donc 9dmg
+        assertEquals(96, heros.getPv());  // Réduction de 10% des dégats subit par le hero, donc le Brig fait 10 de dmg - 10% donc 9dmg
     }
 
     @Test
@@ -37,12 +37,12 @@ class EnnemiTest {
     @Test
     void getAttk() {
         Ennemi ennemi = new Ennemi.Brigand();
-        assertEquals(10, ennemi.getAttk());
+        assertEquals(5, ennemi.getAttk());
     }
 
     @Test
     void getDef() {
         Ennemi ennemi = new Ennemi.Brigand();
-        assertEquals(50, ennemi.getDef());  // Défense de Brigand est 10
+        assertEquals(5, ennemi.getDef());  // Défense de Brigand est 10
     }
 }

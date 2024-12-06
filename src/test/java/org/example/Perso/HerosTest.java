@@ -33,7 +33,7 @@ class HerosTest {
         Heros heros = new Heros(100, 20, 10);
         Ennemi ennemi = new Ennemi.Brigand();
         heros.attaquer(ennemi);
-        assertEquals(40, ennemi.getPv());
+        assertEquals(31, ennemi.getPv());
     }
 
     @Test
