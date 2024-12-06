@@ -57,13 +57,13 @@ public class Heros implements Personnage {
     }
     public static Heros choixhero(int x){
         if (x==1){
-            Heros heros = new Heros(100, 15, 100); // PV, Attaque, Défense
+            Heros heros = new Heros(100, 15, 0); // PV, Def Attk
             return heros;
         } else if (x==2){
-            Heros heros = new Heros(100, 10, 150); // PV, Attaque, Défense.
+            Heros heros = new Heros(110, 10, 5); // PV, Def+ Attk-
             return heros;
         } else if (x==3){
-            Heros heros = new Heros(100, 20, 75); // PV, Attaque, Défense
+            Heros heros = new Heros(85, 20, -5); // PV, Attaque, Défense
             return heros;
         } else{
             return null;

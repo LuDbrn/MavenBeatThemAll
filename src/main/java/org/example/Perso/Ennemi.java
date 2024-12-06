@@ -49,19 +49,19 @@ public class Ennemi implements Personnage {
 
     public static class Brigand extends Ennemi {
         public Brigand() {
-            super(50, 10,50); //super () appele un constructeur ou une méthode de sa classe parente
+            super(50, 5,5); //super () appele un constructeur ou une méthode de sa classe parente
         }
     }
 
     public static class Catcheur extends Ennemi {
         public Catcheur() {
-            super(100, 5,70); // Pleins de PV
+            super(100, 5,0); // Pleins de PV
         }
     }
 
     public static class Gangster extends Ennemi {
         public Gangster() {
-            super(40, 15,40); // Attaque de loin
+            super(40, 10,5); // Attaque de loin
         }
 }
 }
