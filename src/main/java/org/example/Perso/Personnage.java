@@ -3,7 +3,6 @@ package org.example.Perso;
 public interface Personnage
 {
     int pv = 0;
-    int attk =0;
     int def = 0;
 
     //

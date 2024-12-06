@@ -15,7 +15,7 @@ public class Heros implements Personnage {
 
     @Override
     public void subirDegats(int pointsDegats) {
-        int degatsSubis = pointsDegats * (100 - this.def) / 100; // Défense en pourcentage
+        int degatsSubis = pointsDegats * (100 - this.defense) / 100; // Défense en pourcentage
         this.pv = Math.max(this.pv - degatsSubis, 0); // Réduction des PV, minimum 0
     }
 

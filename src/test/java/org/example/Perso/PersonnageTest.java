@@ -8,9 +8,9 @@ class PersonnageTest {
 
     @Test
     void subirDegats() {
-        Personnage personnage = new Heros(100, 20, 10);
-        personnage.subirDegats(15);
-        assertEquals(85, personnage.getPv());
+        Personnage personnage = new Heros(100, 20, 50);
+        personnage.subirDegats(20);
+        assertEquals(90, personnage.getPv());
     }
 
     @Test
