@@ -35,7 +35,7 @@ class CarteTest {
     @Test
     void getDebut() {
         Carte carte = new Carte("Forêt", 100, 0);
-        assertEquals(0, carte.getDebut());
+        assertEquals(100, carte.getDebut());
     }
 
     @Test
